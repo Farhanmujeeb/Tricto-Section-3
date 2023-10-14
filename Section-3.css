@@ -1,0 +1,95 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+.diffcolor {
+  color: grey;
+}
+.card {
+  border: none;
+}
+
+.triangle-container {
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+}
+
+.triangle-container .triangleunder {
+  display: inline-block;
+  position: relative;
+}
+
+.triangle-container .triangleunder::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 8px 0 8px;
+  border-color: red transparent transparent transparent;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-title {
+  font-size: 14.5px;
+}
+.Section-3-linethru {
+  color: grey;
+  text-decoration: line-through;
+  margin-right: 16px;
+}
+.card-text {
+  font-size: small;
+  text-align: center;
+}
+.section-3-card1 {
+  margin-top: px;
+}
+.card-img-top {
+  width: 170px;
+  height: 210px;
+  margin-left: 15px;
+}
+
+.section-3-trending {
+  display: flex;
+  align-items: center;
+}
+.section-3-headingchild {
+  display: flex;
+  justify-content: space-around;
+  width: 220px;
+}
+.secton-3-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin-top: 25px;
+}
+.section-3-main {
+  width: 65%;
+  margin-left: 220px;
+}
+.card-group {
+  margin-top: 15px;
+}
+@media (max-width: 500px) {
+  .section-3-headingchild {
+    display: none;
+  }
+
+  .secton-3-heading {
+    width: auto;
+  }
+  .section-3-main {
+    width: 100%;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
